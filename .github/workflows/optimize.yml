@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g html-minifier-terser clean-css-cli terser purgecss cheerio sharp
+          npm install -g clean-css-cli terser cheerio sharp
           npm install @squoosh/cli@0.7.1
           npm ci --prefer-offline --no-audit
 
@@ -40,21 +40,8 @@ jobs:
           [ -d fonts ] && cp -r fonts optimized/ || echo "Fonts directory not found"
           cp -r *.html optimized/ 2>/dev/null || echo "No HTML files found"
 
-      # Removed: Minify HTML and PHP files
-
-      - name: Purge unused CSS
-        run: |
-          cd optimized
-          if [ -d css ]; then
-            find css -iname "*.css" | while read -r file; do
-              echo "Purging CSS: $file"
-              purgecss \
-                --css "$file" \
-                --content "**/*.php" "**/*.html" "**/*.js" \
-                --output "$(dirname "$file")" \
-                --rejected
-            done
-          fi
+      # 🚫 Removed: Minify HTML and PHP files
+      # 🚫 Removed: Purge unused CSS
 
       - name: Minify CSS
         run: |
@@ -172,7 +159,6 @@ jobs:
           - Optimized images with WebP conversion
           - Generated responsive images
           - Added lazy loading to images
-          - Purged unused CSS
           - Added preload for critical resources
           - Added font-display: swap to CSS fonts
           - Added image width and height attributes
