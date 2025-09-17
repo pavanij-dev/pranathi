@@ -40,7 +40,7 @@ jobs:
           [ -d fonts ] && cp -r fonts optimized/ || echo "Fonts directory not found"
           cp -r *.html optimized/ 2>/dev/null || echo "No HTML files found"
 
-      # 🚫 Removed: Minify HTML and PHP files
+      # Removed: Minify HTML and PHP files
 
       - name: Purge unused CSS
         run: |
