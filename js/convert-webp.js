@@ -5,11 +5,23 @@ const path = require("path");
 const glob = require("glob");
 
 const projectRoot = path.resolve(".");
-const imageFiles = glob.sync("**/images/**/*.{jpg,jpeg,png}", {
-  cwd: projectRoot,
-  nodir: true,
-  absolute: true,
-});
+// const imageFiles = glob.sync("**/images/**/*.{jpg,jpeg,png}", {
+//   cwd: projectRoot,
+//   nodir: true,
+//   absolute: true,
+// });
+
+const imageFiles = glob.sync(
+  [
+    "**/images/**/*.{jpg,jpeg,png}",
+    "**/img/**/*.{jpg,jpeg,png}"
+  ],
+  {
+    cwd: projectRoot,
+    nodir: true,
+    absolute: false, // keep relative for output naming
+  }
+);
 
 console.log(`Found ${imageFiles.length} images to convert to WebP`);
 

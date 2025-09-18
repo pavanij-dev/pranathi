@@ -9,12 +9,19 @@ const sizes = [320, 640, 1024, 1920];
 const projectRoot = path.resolve(".");
 
 // Find all images inside any `images` folder in the project
-glob
-  .sync("**/images/**/*.{jpg,jpeg,png}", {
+
+  const images = glob.sync(
+  [
+    "**/images/**/*.{jpg,jpeg,png}",
+    "**/img/**/*.{jpg,jpeg,png}"
+  ],
+  {
     cwd: projectRoot,
     nodir: true,
     absolute: false, // keep relative for output naming
-  })
+  }
+)
+
   .forEach((relativePath) => {
     const ext = path.extname(relativePath).toLowerCase();
     const baseName = path.basename(relativePath, ext);
