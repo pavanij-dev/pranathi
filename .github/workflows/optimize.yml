@@ -43,15 +43,7 @@ jobs:
       # 🚫 Removed: Minify HTML and PHP files
       # 🚫 Removed: Purge unused CSS
 
-      - name: Minify CSS
-        run: |
-          cd optimized
-          if [ -d css ]; then
-            find css -iname "*.css" | while read -r file; do
-              echo "Minifying CSS: $file"
-              cleancss --output "$file" "$file"
-            done
-          fi
+      
 
       - name: Minify JavaScript
         run: |
