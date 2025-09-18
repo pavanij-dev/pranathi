@@ -1,5 +1,4 @@
-<!-- Footer start -->
-<div class="footer-2 fooo">
+<!-- Footer start --><html><head></head><body><div class="footer-2 fooo">
 <div class="container ">
 <div class="row">
 <div class="col-12">
@@ -8,12 +7,12 @@
 <li class="li"><a href="index.php"> Home</a> </li>
 <li class="li"><a href="#projectHighlights">Project Highlights</a>
 </li>
-<li class="li"><a href="#amenitiesSection" >Amenities</a>
+<li class="li"><a href="#amenitiesSection">Amenities</a>
 </li>
-<li class="li"><a href="#projectPlan" > Project Plan</a> </li>
-<li class="li"><a href="#projectSpecifications" > Specifications
+<li class="li"><a href="#projectPlan"> Project Plan</a> </li>
+<li class="li"><a href="#projectSpecifications"> Specifications
 </a> </li>
-<li class="li"><a href="#projectGallery" > Gallery
+<li class="li"><a href="#projectGallery"> Gallery
 </a></li>
 <li class="li"><a href="#contactUs"> Contact Us
 </a> </li>
@@ -39,12 +38,9 @@ station, Raidurgam, Gachibowli, Hyderabad, Telangana-500032</p>
 
 <div class="col-12 col-md-5 text-white">
 <ul class="padding">
-<li><a class="white" href="mailto:salesmanager@pranathiconstructions.com"><i
-class="fa fa-envelope"></i>salesmanager@pranathiconstructions.com</a></li>
-<li><a class="white" href="mailto:sales@pranathiconstructions.com"><i
-class="fa fa-envelope"></i>sales@pranathiconstructions.com</a></li>
-<li><a class="white" href="mailto:info@pranathiconstructions.com"><i
-class="fa fa-envelope"></i>info@pranathiconstructions.com</a></li>
+<li><a class="white" href="mailto:salesmanager@pranathiconstructions.com"><i class="fa fa-envelope"></i>salesmanager@pranathiconstructions.com</a></li>
+<li><a class="white" href="mailto:sales@pranathiconstructions.com"><i class="fa fa-envelope"></i>sales@pranathiconstructions.com</a></li>
+<li><a class="white" href="mailto:info@pranathiconstructions.com"><i class="fa fa-envelope"></i>info@pranathiconstructions.com</a></li>
 </ul>
 
 </div>
@@ -109,5 +105,5 @@ class="fa fa-envelope"></i>info@pranathiconstructions.com</a></li>
 </div>
 </div>
 </div>
-</div>
-<!-- Footer end -->
+
+<!-- Footer end --></body></html>

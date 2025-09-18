@@ -1,4 +1,4 @@
-<?php
+<!--?php
    if (isset($_GET['utm_source'])) { $utm_source = $_GET['utm_source'];}
    else { $utm_source = ''; }
    
@@ -29,12 +29,9 @@
    
    $fullurl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
    
-   ?>
-<!DOCTYPE html>
-<html lang="en">
-   <head>
+   ?--><!DOCTYPE html><html lang="en"><head>
       <title>PRANATHI KIARA</title>
-      <?php include 'includes/toplinks.php' ?>
+      <!--?php include 'includes/toplinks.php' ?-->
 <style>
 	.ul-home li{
 	list-style: disc;
@@ -115,7 +112,7 @@ select {
 }
 /* styling for arrows on the banner ends here*/
       </style>
-      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-HBNZR88WEL"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-HBNZR88WEL'); </script>
+      <!-- Google tag (gtag.js) --> <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HBNZR88WEL"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-HBNZR88WEL'); </script>
    </head>
    <body>
       <!-- Google Tag Manager (noscript) -->
@@ -123,20 +120,20 @@ select {
          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
       <div class="wrapper">
-         <?php include 'includes/header.php' ?>
+         <!--?php include 'includes/header.php' ?-->
          <div id="sliderSection" class="carousel slide mt-3" data-bs-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active" data-bs-interval="4000">
-                  <img class="d-block d-md-none" src="img/mv-banner1.jpg" style="margin-top: 70px;" alt="">
-                  <img class="d-none d-md-block" src="img/banner1.jpg" style="margin-top: 50px;" alt="">
+                  <picture><source srcset="img/320w/mv-banner1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="img/640w/mv-banner1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="img/1024w/mv-banner1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="img/1920w/mv-banner1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block d-md-none" src="img/mv-banner1.webp" style="margin-top: 70px;" alt="" loading="lazy" decoding="async"></picture>
+                  <picture><source srcset="img/320w/banner1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="img/640w/banner1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="img/1024w/banner1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="img/1920w/banner1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-none d-md-block" src="img/banner1.webp" style="margin-top: 50px;" alt="" loading="lazy" decoding="async"></picture>
                </div>
                <div class="carousel-item" data-bs-interval="4000">
-                  <img class="d-block d-md-none" src="img/mv-banner2.jpg" style="margin-top: 70px;" alt="">
-                  <img class="d-none d-md-block" src="img/banner2.jpg" style="margin-top: 50px;" alt="">
+                  <picture><source srcset="img/320w/mv-banner2_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="img/640w/mv-banner2_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="img/1024w/mv-banner2_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="img/1920w/mv-banner2_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block d-md-none" src="img/mv-banner2.webp" style="margin-top: 70px;" alt="" loading="lazy" decoding="async"></picture>
+                  <picture><source srcset="img/320w/banner2_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="img/640w/banner2_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="img/1024w/banner2_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="img/1920w/banner2_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-none d-md-block" src="img/banner2.webp" style="margin-top: 50px;" alt="" loading="lazy" decoding="async"></picture>
                </div>
                <div class="carousel-item" data-bs-interval="4000">
-                  <img class="d-block d-md-none" src="img/banner2-mobile.jpg" style="margin-top: 70px;" alt="">
-                  <img class="d-none d-md-block" src="img/banner2-web.jpg" style="margin-top: 50px;" alt="">
+                  <picture><source srcset="img/320w/banner2-mobile_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="img/640w/banner2-mobile_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="img/1024w/banner2-mobile_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="img/1920w/banner2-mobile_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block d-md-none" src="img/banner2-mobile.webp" style="margin-top: 70px;" alt="" loading="lazy" decoding="async"></picture>
+                  <picture><source srcset="img/320w/banner2-web_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="img/640w/banner2-web_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="img/1024w/banner2-web_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="img/1920w/banner2-web_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-none d-md-block" src="img/banner2-web.webp" style="margin-top: 50px;" alt="" loading="lazy" decoding="async"></picture>
                </div>
             </div>
             <button class="carousel-control-next" type="button" data-bs-target="#sliderSection" data-bs-slide="next">
@@ -159,8 +156,7 @@ select {
                        <p style="text-align: justify;"><b>Pranathi Constructions</b> is a leading real estate developer in Hyderabad, stands for trusted and quality living. With over 12 years of experience and 7 successful residential projects, we continue to shape premium living spaces in Tellapur. We deliver thoughtfully designed homes that blend aesthetics with functionality. With a proven legacy of excellence, timely project delivery, and a strong focus on customer satisfaction, the company has earned a reputation for creating value-driven residential communities that stand the test of time. Each project by Pranathi Constructions reflects a commitment to superior construction quality, modern design, and long-term liveability.</p>
                    </div>
                   <div class="col-12 col-md-6">
-                     <iframe title="YouTube video player" src="https://www.youtube.com/embed/MSuIb8ap8q4"
-                        width="100%"   class="project-video"  frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                     <iframe title="YouTube video player" src="https://www.youtube.com/embed/MSuIb8ap8q4" width="100%" class="project-video" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                   </div>
                   <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
                       
@@ -172,7 +168,7 @@ select {
                   
                </div>
                      <p style="text-align: justify;"><b>Pranathi Kiara</b> is an exceptional residential offering set in the heart of Tellapur, ideal for those seeking luxury, comfort, and connectivity. This modern residential development features spacious 3 BHK flats for sale in Tellapur, designed to meet the lifestyle needs of urban families.</p>
-                     <p >Located within a thoughtfully designed gated community in Tellapur, the project stands out with its expansive central courtyard, lush greenery, and no ground-level residential units ensuring privacy, serenity and clean air flow across the project.</p>
+                     <p>Located within a thoughtfully designed gated community in Tellapur, the project stands out with its expansive central courtyard, lush greenery, and no ground-level residential units ensuring privacy, serenity and clean air flow across the project.</p>
                      <p>Connectivity is one of Pranathi Kiara’s strongest advantages. It is:</p>
                      <ul class="ul-home">
                         <li>Just 20–25 minutes to Madhapur.</li>
@@ -212,17 +208,17 @@ select {
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/towers-1.png" alt="Configuration: 2.5 & 3 BHK Flats ">
+                           <picture><source srcset="images/icons/project-overview/320w/towers-1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/towers-1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/towers-1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/towers-1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/towers-1.webp" alt="Configuration: 2.5 &amp; 3 BHK Flats " loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
-                           <h3><a href="#">Configuration: 2.5 & 3 BHK Flats </a></h3>
+                           <h3><a href="#">Configuration: 2.5 &amp; 3 BHK Flats </a></h3>
                         </div>
                      </div>
                   </div>
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/flats-1.png" alt="Land Area: 3.30 Acres">
+                           <picture><source srcset="images/icons/project-overview/320w/flats-1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/flats-1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/flats-1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/flats-1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/flats-1.webp" alt="Land Area: 3.30 Acres" loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
                            <h3><a href="#">Land Area: 3.30 Acres</a></h3>
@@ -233,7 +229,7 @@ select {
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/3bhk-1.png" alt="100% Vastu-Compliant Layouts">
+                           <picture><source srcset="images/icons/project-overview/320w/3bhk-1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/3bhk-1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/3bhk-1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/3bhk-1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/3bhk-1.webp" alt="100% Vastu-Compliant Layouts" loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
                            <h3><a href="#">100% Vastu-Compliant Layouts</a></h3>
@@ -243,7 +239,7 @@ select {
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/clubhouse-1.png" alt="Towers: 3 | Floors: G+15 | Total Units: 360">
+                           <picture><source srcset="images/icons/project-overview/320w/clubhouse-1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/clubhouse-1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/clubhouse-1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/clubhouse-1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/clubhouse-1.webp" alt="Towers: 3 | Floors: G+15 | Total Units: 360" loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
                            <h3><a href="#">Towers: 3 | Floors: G+15 | Total Units: 360</a></h3>
@@ -253,7 +249,7 @@ select {
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/club-House.png" alt="Six-Floor Clubhouse with 20+ Amenities">
+                           <picture><source srcset="images/icons/project-overview/320w/club-House_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/club-House_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/club-House_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/club-House_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/club-House.webp" alt="Six-Floor Clubhouse with 20+ Amenities" loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
                            <h3><a href="#">Six-Floor Clubhouse with 20+ Amenities</a></h3>
@@ -263,7 +259,7 @@ select {
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/park.png" alt="70% Open Space | No Flats on Ground Floor">
+                           <picture><source srcset="images/icons/project-overview/320w/park_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/park_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/park_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/park_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/park.webp" alt="70% Open Space | No Flats on Ground Floor" loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
                            <h3><a href="#">70% Open Space | No Flats on Ground Floor</a></h3>
@@ -273,7 +269,7 @@ select {
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/court-yard.png" alt="Premium Central Courtyard (25,000 sq. ft.)">
+                           <picture><source srcset="images/icons/project-overview/320w/court-yard_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/court-yard_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/court-yard_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/court-yard_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/court-yard.webp" alt="Premium Central Courtyard (25,000 sq. ft.)" loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
                            <h3><a href="#">Premium Central Courtyard (25,000 sq. ft.)</a></h3>
@@ -283,7 +279,7 @@ select {
                   <div class="col-12 col-md-4">
                      <div class="service-info-2">
                         <div class="icon">
-                           <img src="images/icons/project-overview/no-car.png" alt="Zero Vehicle Moment on Ground Floor">
+                           <picture><source srcset="images/icons/project-overview/320w/no-car_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/icons/project-overview/640w/no-car_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/icons/project-overview/1024w/no-car_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/icons/project-overview/1920w/no-car_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/icons/project-overview/no-car.webp" alt="Zero Vehicle Moment on Ground Floor" loading="lazy" decoding="async" width="64" height="64"></picture>
                         </div>
                         <div class="service-info-2-ditels">
                            <h3><a href="#">Zero Vehicle Moment on Ground Floor</a></h3>
@@ -294,7 +290,7 @@ select {
                </div>
             </div>
          </div>
-         <div id="amenitiesSection" class="featured-properties content-area slide-box-2" >
+         <div id="amenitiesSection" class="featured-properties content-area slide-box-2">
             <div class="container">
                <div class="main-title-4">
                   <h1>Amenities <span> Features</span></h1>
@@ -309,7 +305,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Amphitheater-min.jpg" alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Amphitheater-min_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Amphitheater-min_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Amphitheater-min_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Amphitheater-min_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Amphitheater-min.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -324,7 +320,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Court.jpg" alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Court_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Court_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Court_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Court_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Court.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -339,7 +335,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Club-house-view-1.jpg" alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Club-house-view-1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Club-house-view-1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Club-house-view-1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Club-house-view-1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Club-house-view-1.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -354,7 +350,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Electric-Car.jpg" alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Electric-Car_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Electric-Car_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Electric-Car_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Electric-Car_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Electric-Car.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -369,7 +365,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Gym.jpg" alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Gym_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Gym_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Gym_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Gym_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Gym.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -384,7 +380,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Hall.jpg" alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Hall_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Hall_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Hall_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Hall_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Hall.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -399,8 +395,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Lobby.jpg"
-                                       alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Lobby_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Lobby_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Lobby_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Lobby_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Lobby.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -415,8 +410,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Party-lawn.jpg"
-                                       alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Party-lawn_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Party-lawn_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Party-lawn_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Party-lawn_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Party-lawn.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -431,7 +425,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Pool.jpg" alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Pool_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Pool_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Pool_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Pool_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Pool.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -446,8 +440,7 @@ select {
                            <div class="property-thumbnail">
                               <a href="javascript:void(0);" class="property-img">
                                  <div class="property-overflow">
-                                    <img class="d-block w-100" src="images/amenities/Supermarket.jpg"
-                                       alt="properties">
+                                    <picture><source srcset="images/amenities/320w/Supermarket_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/amenities/640w/Supermarket_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/amenities/1024w/Supermarket_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/amenities/1920w/Supermarket_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="d-block w-100" src="images/amenities/Supermarket.webp" alt="properties" loading="lazy" decoding="async" width="1080" height="1080"></picture>
                                  </div>
                               </a>
                            </div>
@@ -462,12 +455,8 @@ select {
                <div class="main-title-4"></div>
                <nav>
                   <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                      <button class="nav-link active mb-2" id="nav-project-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-project" type="button" role="tab" aria-controls="nav-project"
-                        aria-selected="true">Project Plan</button>
-                     <button class="nav-link mb-2" id="nav-home-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                        aria-selected="true">Master Plan</button>
+                      <button class="nav-link active mb-2" id="nav-project-tab" data-bs-toggle="tab" data-bs-target="#nav-project" type="button" role="tab" aria-controls="nav-project" aria-selected="true">Project Plan</button>
+                     <button class="nav-link mb-2" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Master Plan</button>
                      <button class="nav-link mb-2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Floor Plan</button>
                      <button class="nav-link mb-2" id="locationPlanButton" data-bs-toggle="tab" data-bs-target="#locationPlan" type="button" role="tab" aria-controls="locationPlan" aria-selected="false">Location Plan</button>
                   </div>
@@ -494,19 +483,19 @@ select {
                         <div class="col-sm-12">
                            <div class="mas-img popular-places-photo">
                               <a data-fancybox="gallery1" href="images/projects/master.jpg">
-                              <img class="img-fluid big" src="images/projects/master-min.jpg" alt="popular-places"></a>
+                              <picture><source srcset="images/projects/320w/master-min_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/projects/640w/master-min_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/projects/1024w/master-min_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/projects/1920w/master-min_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="img-fluid big" src="images/projects/master-min.webp" alt="popular-places" loading="lazy" decoding="async" width="1949" height="1299"></picture></a>
                            </div>
                         </div>
                         <div class="col-12 col-md-6">
                            <div class="mas-img popular-places-photo">
                               <a data-fancybox="gallery1" href="images/projects/master-plan-img-2.jpg">
-                              <img class="img-fluid big" src="images/projects/master-plan-img-2.jpg" alt="popular-places"></a>
+                              <picture><source srcset="images/projects/320w/master-plan-img-2_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/projects/640w/master-plan-img-2_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/projects/1024w/master-plan-img-2_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/projects/1920w/master-plan-img-2_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="img-fluid big" src="images/projects/master-plan-img-2.webp" alt="popular-places" loading="lazy" decoding="async" width="2560" height="1716"></picture></a>
                            </div>
                         </div>
                         <div class="col-12 col-md-6">
                            <div class="mas-img popular-places-photo">
                               <a data-fancybox="gallery1" href="images/projects/master-plan-img-3.jpg">
-                              <img class="img-fluid big" src="images/projects/master-plan-img-3.jpg" alt="popular-places"></a>
+                              <picture><source srcset="images/projects/320w/master-plan-img-3_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/projects/640w/master-plan-img-3_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/projects/1024w/master-plan-img-3_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/projects/1920w/master-plan-img-3_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="img-fluid big" src="images/projects/master-plan-img-3.webp" alt="popular-places" loading="lazy" decoding="async" width="2560" height="1722"></picture></a>
                            </div>
                         </div>
                      </div>
@@ -518,13 +507,13 @@ select {
                         <div class="col-sm-6">
                            <div class="mas-img">
                               <a data-fancybox="gallery1" href="images/plans/Floor-plan-01.webp">
-                              <img src="images/plans/Floor-plan-01.webp" alt=""></a>
+                              <picture><source srcset="images/plans/320w/Floor-plan-01_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/plans/640w/Floor-plan-01_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/plans/1024w/Floor-plan-01_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/plans/1920w/Floor-plan-01_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/plans/Floor-plan-01.webp" alt="" loading="lazy" decoding="async" width="2560" height="1629"></picture></a>
                            </div>
                         </div>
                         <div class="col-sm-6">
                            <div class="mas-img">
                               <a data-fancybox="gallery1" href="images/plans/Floor-plan2-1.webp">
-                              <img src="images/plans/Floor-plan2-1.webp" alt=""></a>
+                              <picture><source srcset="images/plans/320w/Floor-plan2-1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/plans/640w/Floor-plan2-1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/plans/1024w/Floor-plan2-1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/plans/1920w/Floor-plan2-1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/plans/Floor-plan2-1.webp" alt="" loading="lazy" decoding="async" width="2560" height="1629"></picture></a>
                            </div>
                         </div>
                      </div>
@@ -536,7 +525,7 @@ select {
                         <div class="col-sm-6">
                            <div class="mas-img popular-places-photo">
                               <a data-fancybox="gallery1" href="images/projects/location-plan.jpg">
-                              <img class="img-fluid big" src="images/projects/location-plan.jpg" alt="popular-places"></a>
+                              <picture><source srcset="images/projects/320w/location-plan_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/projects/640w/location-plan_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/projects/1024w/location-plan_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/projects/1920w/location-plan_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img class="img-fluid big" src="images/projects/location-plan.webp" alt="popular-places" loading="lazy" decoding="async" width="2560" height="1585"></picture></a>
                            </div>
                         </div>
                         <div class="col-sm-6 align-item-center">
@@ -628,7 +617,7 @@ select {
                         <div class="accordion-heading">STRUCTURE</div>
                         <div class="accordion-content">
                            <ul>
-                              <li>RCC framed structure to withstand wind & seismic loads.</li>
+                              <li>RCC framed structure to withstand wind &amp; seismic loads.</li>
                            </ul>
                         </div>
                         <div class="accordion-heading">SUPER STRUCTURE</div>
@@ -654,7 +643,7 @@ select {
                                  polishing.
                               </li>
                               <li> Internal Doors: MT wood frame with flush shutter.</li>
-                              <li> Windows: UPVC windows with clear glass & provision for mosquito mesh of make
+                              <li> Windows: UPVC windows with clear glass &amp; provision for mosquito mesh of make
                                  NCL VEKA / wintech or equivalent make.
                               </li>
                            </ul>
@@ -685,9 +674,9 @@ select {
                         <div class="accordion-heading">KITCHEN</div>
                         <div class="accordion-content">
                            <ul>
-                              <li>Provision for water purifier, hob & chimney separate water lines for
+                              <li>Provision for water purifier, hob &amp; chimney separate water lines for
                                  municipal water (HMWSSB) and underground water connection.
-                              </LI>
+                              </li>
                               <li> Please Note: Kitchen platform, sink, are all in client’s scope as per their
                                  modular kitchen design and will not be provided by the builder.
                               </li>
@@ -778,60 +767,33 @@ select {
             </div>
             <div class="row">
                <ul class="gallery-slider ">
-                  <li><a data-fancybox="grp" href="images/gallery/b1.webp"><img src="images/gallery/b1.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b2.webp"><img src="images/gallery/b2.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b3.webp"><img src="images/gallery/b3.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b4.webp"><img src="images/gallery/b4.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b5.webp"><img src="images/gallery/b5.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b6.webp"><img src="images/gallery/b6.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b7.webp"><img src="images/gallery/b7.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b8.webp"><img src="images/gallery/b8.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b9.webp"><img src="images/gallery/b9.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b10.webp"><img src="images/gallery/b10.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b11.webp"><img src="images/gallery/b11.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b12.webp"><img src="images/gallery/b12.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b13.webp"><img src="images/gallery/b13.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b14.webp"><img src="images/gallery/b14.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b15.webp"><img src="images/gallery/b15.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b16.webp"><img src="images/gallery/b16.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b17.webp"><img src="images/gallery/b17.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b18.webp"><img src="images/gallery/b18.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b19.webp"><img src="images/gallery/b19.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b20.webp"><img src="images/gallery/b20.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b21.webp"><img src="images/gallery/b21.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b22.webp"><img src="images/gallery/b22.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b23.webp"><img src="images/gallery/b23.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b24.webp"><img src="images/gallery/b24.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b25.webp"><img src="images/gallery/b25.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b26.webp"><img src="images/gallery/b26.webp"
-                     alt=""></a></li>
-                  <li><a data-fancybox="grp" href="images/gallery/b27.webp"><img src="images/gallery/b27.webp"
-                     alt=""></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b1.webp"><picture><source srcset="images/gallery/320w/b1_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b1_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b1_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b1_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b1.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b2.webp"><picture><source srcset="images/gallery/320w/b2_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b2_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b2_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b2_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b2.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b3.webp"><picture><source srcset="images/gallery/320w/b3_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b3_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b3_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b3_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b3.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b4.webp"><picture><source srcset="images/gallery/320w/b4_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b4_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b4_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b4_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b4.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b5.webp"><picture><source srcset="images/gallery/320w/b5_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b5_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b5_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b5_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b5.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b6.webp"><picture><source srcset="images/gallery/320w/b6_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b6_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b6_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b6_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b6.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b7.webp"><picture><source srcset="images/gallery/320w/b7_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b7_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b7_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b7_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b7.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b8.webp"><picture><source srcset="images/gallery/320w/b8_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b8_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b8_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b8_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b8.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b9.webp"><picture><source srcset="images/gallery/320w/b9_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b9_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b9_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b9_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b9.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b10.webp"><picture><source srcset="images/gallery/320w/b10_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b10_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b10_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b10_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b10.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b11.webp"><picture><source srcset="images/gallery/320w/b11_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b11_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b11_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b11_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b11.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b12.webp"><picture><source srcset="images/gallery/320w/b12_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b12_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b12_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b12_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b12.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b13.webp"><picture><source srcset="images/gallery/320w/b13_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b13_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b13_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b13_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b13.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b14.webp"><picture><source srcset="images/gallery/320w/b14_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b14_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b14_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b14_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b14.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b15.webp"><picture><source srcset="images/gallery/320w/b15_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b15_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b15_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b15_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b15.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b16.webp"><picture><source srcset="images/gallery/320w/b16_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b16_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b16_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b16_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b16.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b17.webp"><picture><source srcset="images/gallery/320w/b17_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b17_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b17_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b17_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b17.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b18.webp"><picture><source srcset="images/gallery/320w/b18_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b18_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b18_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b18_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b18.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b19.webp"><picture><source srcset="images/gallery/320w/b19_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b19_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b19_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b19_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b19.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b20.webp"><picture><source srcset="images/gallery/320w/b20_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b20_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b20_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b20_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b20.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b21.webp"><picture><source srcset="images/gallery/320w/b21_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b21_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b21_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b21_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b21.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b22.webp"><picture><source srcset="images/gallery/320w/b22_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b22_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b22_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b22_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b22.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b23.webp"><picture><source srcset="images/gallery/320w/b23_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b23_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b23_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b23_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b23.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b24.webp"><picture><source srcset="images/gallery/320w/b24_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b24_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b24_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b24_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b24.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b25.webp"><picture><source srcset="images/gallery/320w/b25_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b25_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b25_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b25_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b25.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b26.webp"><picture><source srcset="images/gallery/320w/b26_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b26_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b26_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b26_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b26.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
+                  <li><a data-fancybox="grp" href="images/gallery/b27.webp"><picture><source srcset="images/gallery/320w/b27_320w.webp" media="(max-width: 320px)" type="image/webp"><source srcset="images/gallery/640w/b27_640w.webp" media="(max-width: 640px)" type="image/webp"><source srcset="images/gallery/1024w/b27_1024w.webp" media="(max-width: 1024px)" type="image/webp"><source srcset="images/gallery/1920w/b27_1920w.webp" media="(max-width: 1920px)" type="image/webp"><img src="images/gallery/b27.webp" alt="" loading="lazy" decoding="async" width="1024" height="853"></picture></a></li>
                </ul>
             </div>
          </section>
@@ -853,7 +815,7 @@ select {
                         <div class="accordion-heading" style="font-size:14px;">What types of flats are available at Pranathi Kiara?</div>
                         <div class="accordion-content">
                            <ul>
-                              <li>The project offers 2.5 & 3 BHK flats in Tellapur, ranging between 1865 and 2035 sq. ft.</li>
+                              <li>The project offers 2.5 &amp; 3 BHK flats in Tellapur, ranging between 1865 and 2035 sq. ft.</li>
                            </ul>
                         </div>
                         <div class="accordion-heading" style="font-size:14px;">What is the possession date for Pranathi Kiara?</div>
@@ -927,255 +889,251 @@ select {
             <div class="container">
                <div class="row">
                   <div class="col-12 col-md-6 youtubee">
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.926764083455!2d78.2626313!3d17.4605904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbed4561e447e7%3A0x5c4bf81810ab2c0!2sPRANATHI%20KIARA!5e0!3m2!1sen!2sin!4v1684320571876!5m2!1sen!2sin"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.926764083455!2d78.2626313!3d17.4605904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbed4561e447e7%3A0x5c4bf81810ab2c0!2sPRANATHI%20KIARA!5e0!3m2!1sen!2sin!4v1684320571876!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                   <div id="contactUs" class="col-12 col-md-6">
                      <form class="pp-3" action="https://mrcreativedemo.com/DontDelete/pranathi-lp/mail.php" method="POST" id="homeFormBtn">
                         <div class="form-group py-2 position-relative">
                            <!--<label>Name <span class="text-danger">*</span> </label>-->
                            <i data-feather="user" class="fea icon-sm icons"></i>
-                           <input pattern="[a-zA-z ]+" title="Enter valid Name, Max characters allowed are 30"
-                              type="text" class="form-control" name="name" value="" placeholder="Your name" required>
+                           <input pattern="[a-zA-z ]+" title="Enter valid Name, Max characters allowed are 30" type="text" class="form-control" name="name" value="" placeholder="Your name" required="">
                         </div>
                         <div class="form-group py-2 position-relative">
                            <!--<label>Email ID <span class="text-danger">*</span> </label>-->
                            <i data-feather="mail" class="fea icon-sm icons"></i>
-                           <input type="email" title="Enter a valid Email ID" class="form-control" name="email"
-                              value="" placeholder="Email address" required>
+                           <input type="email" title="Enter a valid Email ID" class="form-control" name="email" value="" placeholder="Email address" required="">
                         </div>
                         <div class="form-group py-2 ">
                            <!--<label>Mobile no <span class="text-danger">*</span> </label>-->
                            <div class="row">
                               <div class="col-md-3">
                                  <select name="countryCode" class="form-control">
-                                    <option data-countryCode="IN" value="+91" Selected>India (+91)</option>
+                                    <option data-countrycode="IN" value="+91" selected="">India (+91)</option>
                                     <optgroup label="Other countries">
-                                       <option data-countryCode="DZ" value="+213">Algeria (+213)</option>
-                                       <option data-countryCode="AD" value="+376">Andorra (+376)</option>
-                                       <option data-countryCode="AO" value="+244">Angola (+244)</option>
-                                       <option data-countryCode="AI" value="+1264">Anguilla (+1264)</option>
-                                       <option data-countryCode="AG" value="+1268">Antigua &amp; Barbuda (+1268)</option>
-                                       <option data-countryCode="AR" value="+54">Argentina (+54)</option>
-                                       <option data-countryCode="AM" value="+374">Armenia (+374)</option>
-                                       <option data-countryCode="AW" value="+297">Aruba (+297)</option>
-                                       <option data-countryCode="AU" value="+61">Australia (+61)</option>
-                                       <option data-countryCode="AT" value="+43">Austria (+43)</option>
-                                       <option data-countryCode="AZ" value="+994">Azerbaijan (+994)</option>
-                                       <option data-countryCode="BS" value="+1242">Bahamas (+1242)</option>
-                                       <option data-countryCode="BH" value="+973">Bahrain (+973)</option>
-                                       <option data-countryCode="BD" value="+880">Bangladesh (+880)</option>
-                                       <option data-countryCode="BB" value="+1246">Barbados (+1246)</option>
-                                       <option data-countryCode="BY" value="+375">Belarus (+375)</option>
-                                       <option data-countryCode="BE" value="+32">Belgium (+32)</option>
-                                       <option data-countryCode="BZ" value="+501">Belize (+501)</option>
-                                       <option data-countryCode="BJ" value="+229">Benin (+229)</option>
-                                       <option data-countryCode="BM" value="+1441">Bermuda (+1441)</option>
-                                       <option data-countryCode="BT" value="+975">Bhutan (+975)</option>
-                                       <option data-countryCode="BO" value="+591">Bolivia (+591)</option>
-                                       <option data-countryCode="BA" value="+387">Bosnia Herzegovina (+387)</option>
-                                       <option data-countryCode="BW" value="+267">Botswana (+267)</option>
-                                       <option data-countryCode="BR" value="+55">Brazil (+55)</option>
-                                       <option data-countryCode="BN" value="+673">Brunei (+673)</option>
-                                       <option data-countryCode="BG" value="+359">Bulgaria (+359)</option>
-                                       <option data-countryCode="BF" value="+226">Burkina Faso (+226)</option>
-                                       <option data-countryCode="BI" value="+257">Burundi (+257)</option>
-                                       <option data-countryCode="KH" value="+855">Cambodia (+855)</option>
-                                       <option data-countryCode="CM" value="+237">Cameroon (+237)</option>
-                                       <option data-countryCode="CA" value="+1">Canada (+1)</option>
-                                       <option data-countryCode="CV" value="+238">Cape Verde Islands (+238)</option>
-                                       <option data-countryCode="KY" value="+1345">Cayman Islands (+1345)</option>
-                                       <option data-countryCode="CF" value="+236">Central African Republic (+236)</option>
-                                       <option data-countryCode="CL" value="+56">Chile (+56)</option>
-                                       <option data-countryCode="CN" value="+86">China (+86)</option>
-                                       <option data-countryCode="CO" value="+57">Colombia (+57)</option>
-                                       <option data-countryCode="KM" value="+269">Comoros (+269)</option>
-                                       <option data-countryCode="CG" value="+242">Congo (+242)</option>
-                                       <option data-countryCode="CK" value="+682">Cook Islands (+682)</option>
-                                       <option data-countryCode="CR" value="+506">Costa Rica (+506)</option>
-                                       <option data-countryCode="HR" value="+385">Croatia (+385)</option>
-                                       <option data-countryCode="CU" value="+53">Cuba (+53)</option>
-                                       <option data-countryCode="CY" value="+90392">Cyprus North (+90392)</option>
-                                       <option data-countryCode="CY" value="+357">Cyprus South (+357)</option>
-                                       <option data-countryCode="CZ" value="+42">Czech Republic (+42)</option>
-                                       <option data-countryCode="DK" value="+45">Denmark (+45)</option>
-                                       <option data-countryCode="DJ" value="+253">Djibouti (+253)</option>
-                                       <option data-countryCode="DM" value="+1809">Dominica (+1809)</option>
-                                       <option data-countryCode="DO" value="+1809">Dominican Republic (+1809)</option>
-                                       <option data-countryCode="EC" value="+593">Ecuador (+593)</option>
-                                       <option data-countryCode="EG" value="+20">Egypt (+20)</option>
-                                       <option data-countryCode="SV" value="+503">El Salvador (+503)</option>
-                                       <option data-countryCode="GQ" value="+240">Equatorial Guinea (+240)</option>
-                                       <option data-countryCode="ER" value="+291">Eritrea (+291)</option>
-                                       <option data-countryCode="EE" value="+372">Estonia (+372)</option>
-                                       <option data-countryCode="ET" value="+251">Ethiopia (+251)</option>
-                                       <option data-countryCode="FK" value="+500">Falkland Islands (+500)</option>
-                                       <option data-countryCode="FO" value="+298">Faroe Islands (+298)</option>
-                                       <option data-countryCode="FJ" value="+679">Fiji (+679)</option>
-                                       <option data-countryCode="FI" value="+358">Finland (+358)</option>
-                                       <option data-countryCode="FR" value="+33">France (+33)</option>
-                                       <option data-countryCode="GF" value="+594">French Guiana (+594)</option>
-                                       <option data-countryCode="PF" value="+689">French Polynesia (+689)</option>
-                                       <option data-countryCode="GA" value="+241">Gabon (+241)</option>
-                                       <option data-countryCode="GM" value="+220">Gambia (+220)</option>
-                                       <option data-countryCode="GE" value="+7880">Georgia (+7880)</option>
-                                       <option data-countryCode="DE" value="+49">Germany (+49)</option>
-                                       <option data-countryCode="GH" value="+233">Ghana (+233)</option>
-                                       <option data-countryCode="GI" value="+350">Gibraltar (+350)</option>
-                                       <option data-countryCode="GR" value="+30">Greece (+30)</option>
-                                       <option data-countryCode="GL" value="+299">Greenland (+299)</option>
-                                       <option data-countryCode="GD" value="+1473">Grenada (+1473)</option>
-                                       <option data-countryCode="GP" value="+590">Guadeloupe (+590)</option>
-                                       <option data-countryCode="GU" value="+671">Guam (+671)</option>
-                                       <option data-countryCode="GT" value="+502">Guatemala (+502)</option>
-                                       <option data-countryCode="GN" value="+224">Guinea (+224)</option>
-                                       <option data-countryCode="GW" value="+245">Guinea - Bissau (+245)</option>
-                                       <option data-countryCode="GY" value="+592">Guyana (+592)</option>
-                                       <option data-countryCode="HT" value="+509">Haiti (+509)</option>
-                                       <option data-countryCode="HN" value="+504">Honduras (+504)</option>
-                                       <option data-countryCode="HK" value="+852">Hong Kong (+852)</option>
-                                       <option data-countryCode="HU" value="+36">Hungary (+36)</option>
-                                       <option data-countryCode="IS" value="+354">Iceland (+354)</option>
-                                       <option data-countryCode="IN" value="+91">India (+91)</option>
-                                       <option data-countryCode="ID" value="+62">Indonesia (+62)</option>
-                                       <option data-countryCode="IR" value="+98">Iran (+98)</option>
-                                       <option data-countryCode="IQ" value="+964">Iraq (+964)</option>
-                                       <option data-countryCode="IE" value="+353">Ireland (+353)</option>
-                                       <option data-countryCode="IL" value="+972">Israel (+972)</option>
-                                       <option data-countryCode="IT" value="+39">Italy (+39)</option>
-                                       <option data-countryCode="JM" value="+1876">Jamaica (+1876)</option>
-                                       <option data-countryCode="JP" value="+81">Japan (+81)</option>
-                                       <option data-countryCode="JO" value="+962">Jordan (+962)</option>
-                                       <option data-countryCode="KZ" value="+7">Kazakhstan (+7)</option>
-                                       <option data-countryCode="KE" value="+254">Kenya (+254)</option>
-                                       <option data-countryCode="KI" value="+686">Kiribati (+686)</option>
-                                       <option data-countryCode="KP" value="+850">Korea North (+850)</option>
-                                       <option data-countryCode="KR" value="+82">Korea South (+82)</option>
-                                       <option data-countryCode="KW" value="+965">Kuwait (+965)</option>
-                                       <option data-countryCode="KG" value="+996">Kyrgyzstan (+996)</option>
-                                       <option data-countryCode="LA" value="+856">Laos (+856)</option>
-                                       <option data-countryCode="LV" value="+371">Latvia (+371)</option>
-                                       <option data-countryCode="LB" value="+961">Lebanon (+961)</option>
-                                       <option data-countryCode="LS" value="+266">Lesotho (+266)</option>
-                                       <option data-countryCode="LR" value="+231">Liberia (+231)</option>
-                                       <option data-countryCode="LY" value="+218">Libya (+218)</option>
-                                       <option data-countryCode="LI" value="+417">Liechtenstein (+417)</option>
-                                       <option data-countryCode="LT" value="+370">Lithuania (+370)</option>
-                                       <option data-countryCode="LU" value="+352">Luxembourg (+352)</option>
-                                       <option data-countryCode="MO" value="+853">Macao (+853)</option>
-                                       <option data-countryCode="MK" value="+389">Macedonia (+389)</option>
-                                       <option data-countryCode="MG" value="+261">Madagascar (+261)</option>
-                                       <option data-countryCode="MW" value="+265">Malawi (+265)</option>
-                                       <option data-countryCode="MY" value="+60">Malaysia (+60)</option>
-                                       <option data-countryCode="MV" value="+960">Maldives (+960)</option>
-                                       <option data-countryCode="ML" value="+223">Mali (+223)</option>
-                                       <option data-countryCode="MT" value="+356">Malta (+356)</option>
-                                       <option data-countryCode="MH" value="+692">Marshall Islands (+692)</option>
-                                       <option data-countryCode="MQ" value="+596">Martinique (+596)</option>
-                                       <option data-countryCode="MR" value="+222">Mauritania (+222)</option>
-                                       <option data-countryCode="YT" value="+269">Mayotte (+269)</option>
-                                       <option data-countryCode="MX" value="+52">Mexico (+52)</option>
-                                       <option data-countryCode="FM" value="+691">Micronesia (+691)</option>
-                                       <option data-countryCode="MD" value="+373">Moldova (+373)</option>
-                                       <option data-countryCode="MC" value="+377">Monaco (+377)</option>
-                                       <option data-countryCode="MN" value="+976">Mongolia (+976)</option>
-                                       <option data-countryCode="MS" value="+1664">Montserrat (+1664)</option>
-                                       <option data-countryCode="MA" value="+212">Morocco (+212)</option>
-                                       <option data-countryCode="MZ" value="+258">Mozambique (+258)</option>
-                                       <option data-countryCode="MN" value="+95">Myanmar (+95)</option>
-                                       <option data-countryCode="NA" value="+264">Namibia (+264)</option>
-                                       <option data-countryCode="NR" value="+674">Nauru (+674)</option>
-                                       <option data-countryCode="NP" value="+977">Nepal (+977)</option>
-                                       <option data-countryCode="NL" value="+31">Netherlands (+31)</option>
-                                       <option data-countryCode="NC" value="+687">New Caledonia (+687)</option>
-                                       <option data-countryCode="NZ" value="+64">New Zealand (+64)</option>
-                                       <option data-countryCode="NI" value="+505">Nicaragua (+505)</option>
-                                       <option data-countryCode="NE" value="+227">Niger (+227)</option>
-                                       <option data-countryCode="NG" value="+234">Nigeria (+234)</option>
-                                       <option data-countryCode="NU" value="+683">Niue (+683)</option>
-                                       <option data-countryCode="NF" value="+672">Norfolk Islands (+672)</option>
-                                       <option data-countryCode="NP" value="+670">Northern Marianas (+670)</option>
-                                       <option data-countryCode="NO" value="+47">Norway (+47)</option>
-                                       <option data-countryCode="OM" value="+968">Oman (+968)</option>
-                                       <option data-countryCode="PW" value="+680">Palau (+680)</option>
-                                       <option data-countryCode="PA" value="+507">Panama (+507)</option>
-                                       <option data-countryCode="PG" value="+675">Papua New Guinea (+675)</option>
-                                       <option data-countryCode="PY" value="+595">Paraguay (+595)</option>
-                                       <option data-countryCode="PE" value="+51">Peru (+51)</option>
-                                       <option data-countryCode="PH" value="+63">Philippines (+63)</option>
-                                       <option data-countryCode="PL" value="+48">Poland (+48)</option>
-                                       <option data-countryCode="PT" value="+351">Portugal (+351)</option>
-                                       <option data-countryCode="PR" value="+1787">Puerto Rico (+1787)</option>
-                                       <option data-countryCode="QA" value="+974">Qatar (+974)</option>
-                                       <option data-countryCode="RE" value="+262">Reunion (+262)</option>
-                                       <option data-countryCode="RO" value="+40">Romania (+40)</option>
-                                       <option data-countryCode="RU" value="+7">Russia (+7)</option>
-                                       <option data-countryCode="RW" value="+250">Rwanda (+250)</option>
-                                       <option data-countryCode="SM" value="+378">San Marino (+378)</option>
-                                       <option data-countryCode="ST" value="+239">Sao Tome &amp; Principe (+239)</option>
-                                       <option data-countryCode="SA" value="+966">Saudi Arabia (+966)</option>
-                                       <option data-countryCode="SN" value="+221">Senegal (+221)</option>
-                                       <option data-countryCode="CS" value="+381">Serbia (+381)</option>
-                                       <option data-countryCode="SC" value="+248">Seychelles (+248)</option>
-                                       <option data-countryCode="SL" value="+232">Sierra Leone (+232)</option>
-                                       <option data-countryCode="SG" value="+65">Singapore (+65)</option>
-                                       <option data-countryCode="SK" value="+421">Slovak Republic (+421)</option>
-                                       <option data-countryCode="SI" value="+386">Slovenia (+386)</option>
-                                       <option data-countryCode="SB" value="+677">Solomon Islands (+677)</option>
-                                       <option data-countryCode="SO" value="+252">Somalia (+252)</option>
-                                       <option data-countryCode="ZA" value="+27">South Africa (+27)</option>
-                                       <option data-countryCode="ES" value="+34">Spain (+34)</option>
-                                       <option data-countryCode="LK" value="+94">Sri Lanka (+94)</option>
-                                       <option data-countryCode="SH" value="+290">St. Helena (+290)</option>
-                                       <option data-countryCode="KN" value="+1869">St. Kitts (+1869)</option>
-                                       <option data-countryCode="SC" value="+1758">St. Lucia (+1758)</option>
-                                       <option data-countryCode="SD" value="+249">Sudan (+249)</option>
-                                       <option data-countryCode="SR" value="+597">Suriname (+597)</option>
-                                       <option data-countryCode="SZ" value="+268">Swaziland (+268)</option>
-                                       <option data-countryCode="SE" value="+46">Sweden (+46)</option>
-                                       <option data-countryCode="CH" value="+41">Switzerland (+41)</option>
-                                       <option data-countryCode="SI" value="+963">Syria (+963)</option>
-                                       <option data-countryCode="TW" value="+886">Taiwan (+886)</option>
-                                       <option data-countryCode="TJ" value="+7">Tajikstan (+7)</option>
-                                       <option data-countryCode="TH" value="+66">Thailand (+66)</option>
-                                       <option data-countryCode="TG" value="+228">Togo (+228)</option>
-                                       <option data-countryCode="TO" value="+676">Tonga (+676)</option>
-                                       <option data-countryCode="TT" value="+1868">Trinidad &amp; Tobago (+1868)</option>
-                                       <option data-countryCode="TN" value="+216">Tunisia (+216)</option>
-                                       <option data-countryCode="TR" value="+90">Turkey (+90)</option>
-                                       <option data-countryCode="TM" value="+7">Turkmenistan (+7)</option>
-                                       <option data-countryCode="TM" value="+993">Turkmenistan (+993)</option>
-                                       <option data-countryCode="TC" value="+1649">Turks &amp; Caicos Islands (+1649)</option>
-                                       <option data-countryCode="TV" value="+688">Tuvalu (+688)</option>
-                                       <option data-countryCode="UG" value="+256">Uganda (+256)</option>
-                                       <option data-countryCode="GB" value="+44">UK (+44)</option>
-                                       <option data-countryCode="UA" value="+380">Ukraine (+380)</option>
-                                       <option data-countryCode="AE" value="+971">United Arab Emirates (+971)</option>
-                                       <option data-countryCode="UY" value="+598">Uruguay (+598)</option>
-                                       <option data-countryCode="US" value="+1">USA (+1)</option>
-                                       <option data-countryCode="UZ" value="+7">Uzbekistan (+7)</option>
-                                       <option data-countryCode="VU" value="+678">Vanuatu (+678)</option>
-                                       <option data-countryCode="VA" value="+379">Vatican City (+379)</option>
-                                       <option data-countryCode="VE" value="+58">Venezuela (+58)</option>
-                                       <option data-countryCode="VN" value="+84">Vietnam (+84)</option>
-                                       <option data-countryCode="VG" value="+84">Virgin Islands - British (+1284)</option>
-                                       <option data-countryCode="VI" value="+84">Virgin Islands - US (+1340)</option>
-                                       <option data-countryCode="WF" value="+681">Wallis &amp; Futuna (+681)</option>
-                                       <option data-countryCode="YE" value="+969">Yemen (North)(+969)</option>
-                                       <option data-countryCode="YE" value="+967">Yemen (South)(+967)</option>
-                                       <option data-countryCode="ZM" value="+260">Zambia (+260)</option>
-                                       <option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
+                                       <option data-countrycode="DZ" value="+213">Algeria (+213)</option>
+                                       <option data-countrycode="AD" value="+376">Andorra (+376)</option>
+                                       <option data-countrycode="AO" value="+244">Angola (+244)</option>
+                                       <option data-countrycode="AI" value="+1264">Anguilla (+1264)</option>
+                                       <option data-countrycode="AG" value="+1268">Antigua &amp; Barbuda (+1268)</option>
+                                       <option data-countrycode="AR" value="+54">Argentina (+54)</option>
+                                       <option data-countrycode="AM" value="+374">Armenia (+374)</option>
+                                       <option data-countrycode="AW" value="+297">Aruba (+297)</option>
+                                       <option data-countrycode="AU" value="+61">Australia (+61)</option>
+                                       <option data-countrycode="AT" value="+43">Austria (+43)</option>
+                                       <option data-countrycode="AZ" value="+994">Azerbaijan (+994)</option>
+                                       <option data-countrycode="BS" value="+1242">Bahamas (+1242)</option>
+                                       <option data-countrycode="BH" value="+973">Bahrain (+973)</option>
+                                       <option data-countrycode="BD" value="+880">Bangladesh (+880)</option>
+                                       <option data-countrycode="BB" value="+1246">Barbados (+1246)</option>
+                                       <option data-countrycode="BY" value="+375">Belarus (+375)</option>
+                                       <option data-countrycode="BE" value="+32">Belgium (+32)</option>
+                                       <option data-countrycode="BZ" value="+501">Belize (+501)</option>
+                                       <option data-countrycode="BJ" value="+229">Benin (+229)</option>
+                                       <option data-countrycode="BM" value="+1441">Bermuda (+1441)</option>
+                                       <option data-countrycode="BT" value="+975">Bhutan (+975)</option>
+                                       <option data-countrycode="BO" value="+591">Bolivia (+591)</option>
+                                       <option data-countrycode="BA" value="+387">Bosnia Herzegovina (+387)</option>
+                                       <option data-countrycode="BW" value="+267">Botswana (+267)</option>
+                                       <option data-countrycode="BR" value="+55">Brazil (+55)</option>
+                                       <option data-countrycode="BN" value="+673">Brunei (+673)</option>
+                                       <option data-countrycode="BG" value="+359">Bulgaria (+359)</option>
+                                       <option data-countrycode="BF" value="+226">Burkina Faso (+226)</option>
+                                       <option data-countrycode="BI" value="+257">Burundi (+257)</option>
+                                       <option data-countrycode="KH" value="+855">Cambodia (+855)</option>
+                                       <option data-countrycode="CM" value="+237">Cameroon (+237)</option>
+                                       <option data-countrycode="CA" value="+1">Canada (+1)</option>
+                                       <option data-countrycode="CV" value="+238">Cape Verde Islands (+238)</option>
+                                       <option data-countrycode="KY" value="+1345">Cayman Islands (+1345)</option>
+                                       <option data-countrycode="CF" value="+236">Central African Republic (+236)</option>
+                                       <option data-countrycode="CL" value="+56">Chile (+56)</option>
+                                       <option data-countrycode="CN" value="+86">China (+86)</option>
+                                       <option data-countrycode="CO" value="+57">Colombia (+57)</option>
+                                       <option data-countrycode="KM" value="+269">Comoros (+269)</option>
+                                       <option data-countrycode="CG" value="+242">Congo (+242)</option>
+                                       <option data-countrycode="CK" value="+682">Cook Islands (+682)</option>
+                                       <option data-countrycode="CR" value="+506">Costa Rica (+506)</option>
+                                       <option data-countrycode="HR" value="+385">Croatia (+385)</option>
+                                       <option data-countrycode="CU" value="+53">Cuba (+53)</option>
+                                       <option data-countrycode="CY" value="+90392">Cyprus North (+90392)</option>
+                                       <option data-countrycode="CY" value="+357">Cyprus South (+357)</option>
+                                       <option data-countrycode="CZ" value="+42">Czech Republic (+42)</option>
+                                       <option data-countrycode="DK" value="+45">Denmark (+45)</option>
+                                       <option data-countrycode="DJ" value="+253">Djibouti (+253)</option>
+                                       <option data-countrycode="DM" value="+1809">Dominica (+1809)</option>
+                                       <option data-countrycode="DO" value="+1809">Dominican Republic (+1809)</option>
+                                       <option data-countrycode="EC" value="+593">Ecuador (+593)</option>
+                                       <option data-countrycode="EG" value="+20">Egypt (+20)</option>
+                                       <option data-countrycode="SV" value="+503">El Salvador (+503)</option>
+                                       <option data-countrycode="GQ" value="+240">Equatorial Guinea (+240)</option>
+                                       <option data-countrycode="ER" value="+291">Eritrea (+291)</option>
+                                       <option data-countrycode="EE" value="+372">Estonia (+372)</option>
+                                       <option data-countrycode="ET" value="+251">Ethiopia (+251)</option>
+                                       <option data-countrycode="FK" value="+500">Falkland Islands (+500)</option>
+                                       <option data-countrycode="FO" value="+298">Faroe Islands (+298)</option>
+                                       <option data-countrycode="FJ" value="+679">Fiji (+679)</option>
+                                       <option data-countrycode="FI" value="+358">Finland (+358)</option>
+                                       <option data-countrycode="FR" value="+33">France (+33)</option>
+                                       <option data-countrycode="GF" value="+594">French Guiana (+594)</option>
+                                       <option data-countrycode="PF" value="+689">French Polynesia (+689)</option>
+                                       <option data-countrycode="GA" value="+241">Gabon (+241)</option>
+                                       <option data-countrycode="GM" value="+220">Gambia (+220)</option>
+                                       <option data-countrycode="GE" value="+7880">Georgia (+7880)</option>
+                                       <option data-countrycode="DE" value="+49">Germany (+49)</option>
+                                       <option data-countrycode="GH" value="+233">Ghana (+233)</option>
+                                       <option data-countrycode="GI" value="+350">Gibraltar (+350)</option>
+                                       <option data-countrycode="GR" value="+30">Greece (+30)</option>
+                                       <option data-countrycode="GL" value="+299">Greenland (+299)</option>
+                                       <option data-countrycode="GD" value="+1473">Grenada (+1473)</option>
+                                       <option data-countrycode="GP" value="+590">Guadeloupe (+590)</option>
+                                       <option data-countrycode="GU" value="+671">Guam (+671)</option>
+                                       <option data-countrycode="GT" value="+502">Guatemala (+502)</option>
+                                       <option data-countrycode="GN" value="+224">Guinea (+224)</option>
+                                       <option data-countrycode="GW" value="+245">Guinea - Bissau (+245)</option>
+                                       <option data-countrycode="GY" value="+592">Guyana (+592)</option>
+                                       <option data-countrycode="HT" value="+509">Haiti (+509)</option>
+                                       <option data-countrycode="HN" value="+504">Honduras (+504)</option>
+                                       <option data-countrycode="HK" value="+852">Hong Kong (+852)</option>
+                                       <option data-countrycode="HU" value="+36">Hungary (+36)</option>
+                                       <option data-countrycode="IS" value="+354">Iceland (+354)</option>
+                                       <option data-countrycode="IN" value="+91">India (+91)</option>
+                                       <option data-countrycode="ID" value="+62">Indonesia (+62)</option>
+                                       <option data-countrycode="IR" value="+98">Iran (+98)</option>
+                                       <option data-countrycode="IQ" value="+964">Iraq (+964)</option>
+                                       <option data-countrycode="IE" value="+353">Ireland (+353)</option>
+                                       <option data-countrycode="IL" value="+972">Israel (+972)</option>
+                                       <option data-countrycode="IT" value="+39">Italy (+39)</option>
+                                       <option data-countrycode="JM" value="+1876">Jamaica (+1876)</option>
+                                       <option data-countrycode="JP" value="+81">Japan (+81)</option>
+                                       <option data-countrycode="JO" value="+962">Jordan (+962)</option>
+                                       <option data-countrycode="KZ" value="+7">Kazakhstan (+7)</option>
+                                       <option data-countrycode="KE" value="+254">Kenya (+254)</option>
+                                       <option data-countrycode="KI" value="+686">Kiribati (+686)</option>
+                                       <option data-countrycode="KP" value="+850">Korea North (+850)</option>
+                                       <option data-countrycode="KR" value="+82">Korea South (+82)</option>
+                                       <option data-countrycode="KW" value="+965">Kuwait (+965)</option>
+                                       <option data-countrycode="KG" value="+996">Kyrgyzstan (+996)</option>
+                                       <option data-countrycode="LA" value="+856">Laos (+856)</option>
+                                       <option data-countrycode="LV" value="+371">Latvia (+371)</option>
+                                       <option data-countrycode="LB" value="+961">Lebanon (+961)</option>
+                                       <option data-countrycode="LS" value="+266">Lesotho (+266)</option>
+                                       <option data-countrycode="LR" value="+231">Liberia (+231)</option>
+                                       <option data-countrycode="LY" value="+218">Libya (+218)</option>
+                                       <option data-countrycode="LI" value="+417">Liechtenstein (+417)</option>
+                                       <option data-countrycode="LT" value="+370">Lithuania (+370)</option>
+                                       <option data-countrycode="LU" value="+352">Luxembourg (+352)</option>
+                                       <option data-countrycode="MO" value="+853">Macao (+853)</option>
+                                       <option data-countrycode="MK" value="+389">Macedonia (+389)</option>
+                                       <option data-countrycode="MG" value="+261">Madagascar (+261)</option>
+                                       <option data-countrycode="MW" value="+265">Malawi (+265)</option>
+                                       <option data-countrycode="MY" value="+60">Malaysia (+60)</option>
+                                       <option data-countrycode="MV" value="+960">Maldives (+960)</option>
+                                       <option data-countrycode="ML" value="+223">Mali (+223)</option>
+                                       <option data-countrycode="MT" value="+356">Malta (+356)</option>
+                                       <option data-countrycode="MH" value="+692">Marshall Islands (+692)</option>
+                                       <option data-countrycode="MQ" value="+596">Martinique (+596)</option>
+                                       <option data-countrycode="MR" value="+222">Mauritania (+222)</option>
+                                       <option data-countrycode="YT" value="+269">Mayotte (+269)</option>
+                                       <option data-countrycode="MX" value="+52">Mexico (+52)</option>
+                                       <option data-countrycode="FM" value="+691">Micronesia (+691)</option>
+                                       <option data-countrycode="MD" value="+373">Moldova (+373)</option>
+                                       <option data-countrycode="MC" value="+377">Monaco (+377)</option>
+                                       <option data-countrycode="MN" value="+976">Mongolia (+976)</option>
+                                       <option data-countrycode="MS" value="+1664">Montserrat (+1664)</option>
+                                       <option data-countrycode="MA" value="+212">Morocco (+212)</option>
+                                       <option data-countrycode="MZ" value="+258">Mozambique (+258)</option>
+                                       <option data-countrycode="MN" value="+95">Myanmar (+95)</option>
+                                       <option data-countrycode="NA" value="+264">Namibia (+264)</option>
+                                       <option data-countrycode="NR" value="+674">Nauru (+674)</option>
+                                       <option data-countrycode="NP" value="+977">Nepal (+977)</option>
+                                       <option data-countrycode="NL" value="+31">Netherlands (+31)</option>
+                                       <option data-countrycode="NC" value="+687">New Caledonia (+687)</option>
+                                       <option data-countrycode="NZ" value="+64">New Zealand (+64)</option>
+                                       <option data-countrycode="NI" value="+505">Nicaragua (+505)</option>
+                                       <option data-countrycode="NE" value="+227">Niger (+227)</option>
+                                       <option data-countrycode="NG" value="+234">Nigeria (+234)</option>
+                                       <option data-countrycode="NU" value="+683">Niue (+683)</option>
+                                       <option data-countrycode="NF" value="+672">Norfolk Islands (+672)</option>
+                                       <option data-countrycode="NP" value="+670">Northern Marianas (+670)</option>
+                                       <option data-countrycode="NO" value="+47">Norway (+47)</option>
+                                       <option data-countrycode="OM" value="+968">Oman (+968)</option>
+                                       <option data-countrycode="PW" value="+680">Palau (+680)</option>
+                                       <option data-countrycode="PA" value="+507">Panama (+507)</option>
+                                       <option data-countrycode="PG" value="+675">Papua New Guinea (+675)</option>
+                                       <option data-countrycode="PY" value="+595">Paraguay (+595)</option>
+                                       <option data-countrycode="PE" value="+51">Peru (+51)</option>
+                                       <option data-countrycode="PH" value="+63">Philippines (+63)</option>
+                                       <option data-countrycode="PL" value="+48">Poland (+48)</option>
+                                       <option data-countrycode="PT" value="+351">Portugal (+351)</option>
+                                       <option data-countrycode="PR" value="+1787">Puerto Rico (+1787)</option>
+                                       <option data-countrycode="QA" value="+974">Qatar (+974)</option>
+                                       <option data-countrycode="RE" value="+262">Reunion (+262)</option>
+                                       <option data-countrycode="RO" value="+40">Romania (+40)</option>
+                                       <option data-countrycode="RU" value="+7">Russia (+7)</option>
+                                       <option data-countrycode="RW" value="+250">Rwanda (+250)</option>
+                                       <option data-countrycode="SM" value="+378">San Marino (+378)</option>
+                                       <option data-countrycode="ST" value="+239">Sao Tome &amp; Principe (+239)</option>
+                                       <option data-countrycode="SA" value="+966">Saudi Arabia (+966)</option>
+                                       <option data-countrycode="SN" value="+221">Senegal (+221)</option>
+                                       <option data-countrycode="CS" value="+381">Serbia (+381)</option>
+                                       <option data-countrycode="SC" value="+248">Seychelles (+248)</option>
+                                       <option data-countrycode="SL" value="+232">Sierra Leone (+232)</option>
+                                       <option data-countrycode="SG" value="+65">Singapore (+65)</option>
+                                       <option data-countrycode="SK" value="+421">Slovak Republic (+421)</option>
+                                       <option data-countrycode="SI" value="+386">Slovenia (+386)</option>
+                                       <option data-countrycode="SB" value="+677">Solomon Islands (+677)</option>
+                                       <option data-countrycode="SO" value="+252">Somalia (+252)</option>
+                                       <option data-countrycode="ZA" value="+27">South Africa (+27)</option>
+                                       <option data-countrycode="ES" value="+34">Spain (+34)</option>
+                                       <option data-countrycode="LK" value="+94">Sri Lanka (+94)</option>
+                                       <option data-countrycode="SH" value="+290">St. Helena (+290)</option>
+                                       <option data-countrycode="KN" value="+1869">St. Kitts (+1869)</option>
+                                       <option data-countrycode="SC" value="+1758">St. Lucia (+1758)</option>
+                                       <option data-countrycode="SD" value="+249">Sudan (+249)</option>
+                                       <option data-countrycode="SR" value="+597">Suriname (+597)</option>
+                                       <option data-countrycode="SZ" value="+268">Swaziland (+268)</option>
+                                       <option data-countrycode="SE" value="+46">Sweden (+46)</option>
+                                       <option data-countrycode="CH" value="+41">Switzerland (+41)</option>
+                                       <option data-countrycode="SI" value="+963">Syria (+963)</option>
+                                       <option data-countrycode="TW" value="+886">Taiwan (+886)</option>
+                                       <option data-countrycode="TJ" value="+7">Tajikstan (+7)</option>
+                                       <option data-countrycode="TH" value="+66">Thailand (+66)</option>
+                                       <option data-countrycode="TG" value="+228">Togo (+228)</option>
+                                       <option data-countrycode="TO" value="+676">Tonga (+676)</option>
+                                       <option data-countrycode="TT" value="+1868">Trinidad &amp; Tobago (+1868)</option>
+                                       <option data-countrycode="TN" value="+216">Tunisia (+216)</option>
+                                       <option data-countrycode="TR" value="+90">Turkey (+90)</option>
+                                       <option data-countrycode="TM" value="+7">Turkmenistan (+7)</option>
+                                       <option data-countrycode="TM" value="+993">Turkmenistan (+993)</option>
+                                       <option data-countrycode="TC" value="+1649">Turks &amp; Caicos Islands (+1649)</option>
+                                       <option data-countrycode="TV" value="+688">Tuvalu (+688)</option>
+                                       <option data-countrycode="UG" value="+256">Uganda (+256)</option>
+                                       <option data-countrycode="GB" value="+44">UK (+44)</option>
+                                       <option data-countrycode="UA" value="+380">Ukraine (+380)</option>
+                                       <option data-countrycode="AE" value="+971">United Arab Emirates (+971)</option>
+                                       <option data-countrycode="UY" value="+598">Uruguay (+598)</option>
+                                       <option data-countrycode="US" value="+1">USA (+1)</option>
+                                       <option data-countrycode="UZ" value="+7">Uzbekistan (+7)</option>
+                                       <option data-countrycode="VU" value="+678">Vanuatu (+678)</option>
+                                       <option data-countrycode="VA" value="+379">Vatican City (+379)</option>
+                                       <option data-countrycode="VE" value="+58">Venezuela (+58)</option>
+                                       <option data-countrycode="VN" value="+84">Vietnam (+84)</option>
+                                       <option data-countrycode="VG" value="+84">Virgin Islands - British (+1284)</option>
+                                       <option data-countrycode="VI" value="+84">Virgin Islands - US (+1340)</option>
+                                       <option data-countrycode="WF" value="+681">Wallis &amp; Futuna (+681)</option>
+                                       <option data-countrycode="YE" value="+969">Yemen (North)(+969)</option>
+                                       <option data-countrycode="YE" value="+967">Yemen (South)(+967)</option>
+                                       <option data-countrycode="ZM" value="+260">Zambia (+260)</option>
+                                       <option data-countrycode="ZW" value="+263">Zimbabwe (+263)</option>
                                     </optgroup>
                                  </select>
                               </div>
                               <div class="col-md-9">
-                                 <input type="tel" class="form-control" name="phone" value="" placeholder="Phone" required pattern="[6-9]{1}[0-9]{9}" title="Enter Valid 10 digits Mobile Number" minlength="10" maxlength="12">
+                                 <input type="tel" class="form-control" name="phone" value="" placeholder="Phone" required="" pattern="[6-9]{1}[0-9]{9}" title="Enter Valid 10 digits Mobile Number" minlength="10" maxlength="12">
                               </div>
                            </div>
                         </div>
                         <div class="form-group">
-                           <select name="location" class="form-control mt-2" required>
+                           <select name="location" class="form-control mt-2" required="">
                               <option value="">Are you interested in buying 3BHK property in Tellapur?</option>
                               <option value="Yes">Yes</option>
                               <option value="No">No</option>
@@ -1188,7 +1146,7 @@ select {
                            <!--</select>-->
                            
                            <br>  
-                           <select name="budget" class="form-control" required>
+                           <select name="budget" class="form-control" required="">
                               <option value="">Select your preferred flat type and preferred Budget?</option>
                               <option value="3BHK | 1865 SFT | Price@1.33 Cr*">3BHK | 1865 SFT | Price@1.33 Cr*</option>
                               <option value="3BHK | 1915 SFT | Price@1.36 Cr*">3BHK | 1915 SFT | Price@1.36 Cr*</option>
@@ -1238,9 +1196,9 @@ select {
 
          
          <div class="clearfix"></div>
-         <?php include 'includes/footer.php' ?>
-         <?php include 'includes/bottom-links.php' ?>
+         <!--?php include 'includes/footer.php' ?-->
+         <!--?php include 'includes/bottom-links.php' ?-->
       </div>
       <script src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js" type="text/javascript" data-bot="25624986"></script>
-   </body>
-</html>
+   
+</body></html>
